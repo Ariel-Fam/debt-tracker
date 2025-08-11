@@ -4,6 +4,7 @@ import "@/styles/space-bg.css";
 import Logo from "@/components/Logo";
 import Image from "next/image";
 import styles from "@/styles/modules/footer.module.css"
+import Link from "next/link";
 
 
 
@@ -22,7 +23,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
             <div className="flex items-center gap-3"><Logo size={28} /><span className="opacity-70">Debt Tracker</span></div>
             <nav className="flex items-center gap-4 text-sm">
-              <a className="underline-offset-4 hover:underline" href="/">Home</a>
+
+
+              <Link href="/">
+              
+              <div className="underline-offset-4 hover:underline">Home</div>
+              </Link>
             </nav>
           </div>
         </header>
