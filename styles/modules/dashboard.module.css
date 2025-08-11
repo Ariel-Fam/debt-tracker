@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.panel {
+  border-radius: 1rem;
+  background: rgba(19, 35, 105, 0.6);
+  border: 1px solid rgb(30,41,59);
+  padding: 1rem;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.progress{
+  height: .5rem;
+  background: rgb(30,41,59);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.badge {
+  padding: .25rem .5rem;
+  border-radius: .75rem;
+  background: linear-gradient(90deg, #22d3ee, #818cf8);
+  color: #0b1220;
+  font-weight: 600;
+}

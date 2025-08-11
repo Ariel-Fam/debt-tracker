@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    background-color: gray;
+}
+
+.button{
+    padding: 10px;
+    background-color: blue;
+    border-radius: 14px;
+}
+
+.button:hover{
+    transform: scale(110%);
+    background-color: rgb(45, 45, 45);
+}

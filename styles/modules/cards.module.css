@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: rgba(2,6,23,.6);
+  border: 1px solid rgb(30,41,59);
+  padding: 1rem;
+}
+
+.meta{ font-size: .8rem; opacity: .7; }
+
+.bubble {
+  position: absolute;
+  right: -3rem;
+  top: -3rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 9999px;
+  filter: blur(12px);
+  opacity: .2;
+}
