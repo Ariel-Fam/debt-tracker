@@ -4,6 +4,13 @@ import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend, Cart
 import { DebtCard } from "@/lib/types";
 import { totals, percent } from "@/lib/utils";
 
+
+type ChartData = {
+  name: string;
+  [key: string]: string | number;
+};
+
+
 export default function Charts({ cards }: { cards: DebtCard[] }) {
   const t = totals(cards);
 
@@ -35,7 +42,7 @@ function ChartCard({ title, children }: React.PropsWithChildren<{ title: string 
   );
 }
 
-function BarWrap({ data, bars }: { data: any[]; bars: { dataKey: string; label: string }[] }) {
+function BarWrap({ data, bars }: { data: ChartData[]; bars: { dataKey: string; label: string }[] }) {
   return (
     <div className="h-64">
       <ResponsiveContainer width="100%" height="100%">

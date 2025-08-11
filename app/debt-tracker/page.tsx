@@ -103,7 +103,7 @@ export default function CSSModulesDash() {
                 <BarChart data={dataDistribution}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="name" /><YAxis /><Tooltip /><Legend />
-                  <Bar dataKey="pct" name="% of Total" fill="#3dbcd6" />
+                  <Bar dataKey="pct" name="% of Total" fill="#FFA500" />
                 </BarChart>
               </ResponsiveContainer>
             </div>
